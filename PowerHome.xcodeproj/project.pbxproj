@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */; };
+		ACFC97C4202FA648004A3FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C3202FA648004A3FE3 /* Assets.xcassets */; };
+		ACFC97C7202FA648004A3FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */; };
+		ACFC97D2202FA648004A3FE3 /* PowerHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97D1202FA648004A3FE3 /* PowerHomeTests.swift */; };
+		ACFC97DD202FA649004A3FE3 /* PowerHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97DC202FA649004A3FE3 /* PowerHomeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACFC97CE202FA648004A3FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACFC97B1202FA648004A3FE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACFC97B8202FA648004A3FE3;
+			remoteInfo = PowerHome;
+		};
+		ACFC97D9202FA649004A3FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACFC97B1202FA648004A3FE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACFC97B8202FA648004A3FE3;
+			remoteInfo = PowerHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACFC97B9202FA648004A3FE3 /* PowerHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACFC97C3202FA648004A3FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACFC97C6202FA648004A3FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACFC97C8202FA648004A3FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFC97CD202FA648004A3FE3 /* PowerHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFC97D1202FA648004A3FE3 /* PowerHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerHomeTests.swift; sourceTree = "<group>"; };
+		ACFC97D3202FA648004A3FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFC97D8202FA649004A3FE3 /* PowerHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFC97DC202FA649004A3FE3 /* PowerHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerHomeUITests.swift; sourceTree = "<group>"; };
+		ACFC97DE202FA649004A3FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACFC97B6202FA648004A3FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACFC97CA202FA648004A3FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACFC97D5202FA649004A3FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACFC97B0202FA648004A3FE3 = {
+			isa = PBXGroup;
+			children = (
+				ACFC97BB202FA648004A3FE3 /* PowerHome */,
+				ACFC97D0202FA648004A3FE3 /* PowerHomeTests */,
+				ACFC97DB202FA649004A3FE3 /* PowerHomeUITests */,
+				ACFC97BA202FA648004A3FE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACFC97BA202FA648004A3FE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACFC97B9202FA648004A3FE3 /* PowerHome.app */,
+				ACFC97CD202FA648004A3FE3 /* PowerHomeTests.xctest */,
+				ACFC97D8202FA649004A3FE3 /* PowerHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACFC97BB202FA648004A3FE3 /* PowerHome */ = {
+			isa = PBXGroup;
+			children = (
+				ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */,
+				ACFC97C3202FA648004A3FE3 /* Assets.xcassets */,
+				ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */,
+				ACFC97C8202FA648004A3FE3 /* Info.plist */,
+			);
+			path = PowerHome;
+			sourceTree = "<group>";
+		};
+		ACFC97D0202FA648004A3FE3 /* PowerHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACFC97D1202FA648004A3FE3 /* PowerHomeTests.swift */,
+				ACFC97D3202FA648004A3FE3 /* Info.plist */,
+			);
+			path = PowerHomeTests;
+			sourceTree = "<group>";
+		};
+		ACFC97DB202FA649004A3FE3 /* PowerHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACFC97DC202FA649004A3FE3 /* PowerHomeUITests.swift */,
+				ACFC97DE202FA649004A3FE3 /* Info.plist */,
+			);
+			path = PowerHomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACFC97B8202FA648004A3FE3 /* PowerHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACFC97E1202FA649004A3FE3 /* Build configuration list for PBXNativeTarget "PowerHome" */;
+			buildPhases = (
+				ACFC97B5202FA648004A3FE3 /* Sources */,
+				ACFC97B6202FA648004A3FE3 /* Frameworks */,
+				ACFC97B7202FA648004A3FE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PowerHome;
+			productName = PowerHome;
+			productReference = ACFC97B9202FA648004A3FE3 /* PowerHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACFC97CC202FA648004A3FE3 /* PowerHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACFC97E4202FA649004A3FE3 /* Build configuration list for PBXNativeTarget "PowerHomeTests" */;
+			buildPhases = (
+				ACFC97C9202FA648004A3FE3 /* Sources */,
+				ACFC97CA202FA648004A3FE3 /* Frameworks */,
+				ACFC97CB202FA648004A3FE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACFC97CF202FA648004A3FE3 /* PBXTargetDependency */,
+			);
+			name = PowerHomeTests;
+			productName = PowerHomeTests;
+			productReference = ACFC97CD202FA648004A3FE3 /* PowerHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACFC97D7202FA649004A3FE3 /* PowerHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACFC97E7202FA649004A3FE3 /* Build configuration list for PBXNativeTarget "PowerHomeUITests" */;
+			buildPhases = (
+				ACFC97D4202FA649004A3FE3 /* Sources */,
+				ACFC97D5202FA649004A3FE3 /* Frameworks */,
+				ACFC97D6202FA649004A3FE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACFC97DA202FA649004A3FE3 /* PBXTargetDependency */,
+			);
+			name = PowerHomeUITests;
+			productName = PowerHomeUITests;
+			productReference = ACFC97D8202FA649004A3FE3 /* PowerHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACFC97B1202FA648004A3FE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Francisco Javier Chacon de Dios";
+				TargetAttributes = {
+					ACFC97B8202FA648004A3FE3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					ACFC97CC202FA648004A3FE3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACFC97B8202FA648004A3FE3;
+					};
+					ACFC97D7202FA649004A3FE3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACFC97B8202FA648004A3FE3;
+					};
+				};
+			};
+			buildConfigurationList = ACFC97B4202FA648004A3FE3 /* Build configuration list for PBXProject "PowerHome" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACFC97B0202FA648004A3FE3;
+			productRefGroup = ACFC97BA202FA648004A3FE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACFC97B8202FA648004A3FE3 /* PowerHome */,
+				ACFC97CC202FA648004A3FE3 /* PowerHomeTests */,
+				ACFC97D7202FA649004A3FE3 /* PowerHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACFC97B7202FA648004A3FE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFC97C7202FA648004A3FE3 /* LaunchScreen.storyboard in Resources */,
+				ACFC97C4202FA648004A3FE3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACFC97CB202FA648004A3FE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACFC97D6202FA649004A3FE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACFC97B5202FA648004A3FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACFC97C9202FA648004A3FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFC97D2202FA648004A3FE3 /* PowerHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACFC97D4202FA649004A3FE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFC97DD202FA649004A3FE3 /* PowerHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACFC97CF202FA648004A3FE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACFC97B8202FA648004A3FE3 /* PowerHome */;
+			targetProxy = ACFC97CE202FA648004A3FE3 /* PBXContainerItemProxy */;
+		};
+		ACFC97DA202FA649004A3FE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACFC97B8202FA648004A3FE3 /* PowerHome */;
+			targetProxy = ACFC97D9202FA649004A3FE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACFC97C6202FA648004A3FE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACFC97DF202FA649004A3FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACFC97E0202FA649004A3FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACFC97E2202FA649004A3FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW7TQ7A4EY;
+				INFOPLIST_FILE = PowerHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.PowerHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACFC97E3202FA649004A3FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW7TQ7A4EY;
+				INFOPLIST_FILE = PowerHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.PowerHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACFC97E5202FA649004A3FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW7TQ7A4EY;
+				INFOPLIST_FILE = PowerHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.PowerHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerHome.app/PowerHome";
+			};
+			name = Debug;
+		};
+		ACFC97E6202FA649004A3FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW7TQ7A4EY;
+				INFOPLIST_FILE = PowerHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.PowerHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerHome.app/PowerHome";
+			};
+			name = Release;
+		};
+		ACFC97E8202FA649004A3FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW7TQ7A4EY;
+				INFOPLIST_FILE = PowerHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.PowerHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PowerHome;
+			};
+			name = Debug;
+		};
+		ACFC97E9202FA649004A3FE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW7TQ7A4EY;
+				INFOPLIST_FILE = PowerHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjcd.PowerHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PowerHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACFC97B4202FA648004A3FE3 /* Build configuration list for PBXProject "PowerHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFC97DF202FA649004A3FE3 /* Debug */,
+				ACFC97E0202FA649004A3FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACFC97E1202FA649004A3FE3 /* Build configuration list for PBXNativeTarget "PowerHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFC97E2202FA649004A3FE3 /* Debug */,
+				ACFC97E3202FA649004A3FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACFC97E4202FA649004A3FE3 /* Build configuration list for PBXNativeTarget "PowerHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFC97E5202FA649004A3FE3 /* Debug */,
+				ACFC97E6202FA649004A3FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACFC97E7202FA649004A3FE3 /* Build configuration list for PBXNativeTarget "PowerHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFC97E8202FA649004A3FE3 /* Debug */,
+				ACFC97E9202FA649004A3FE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACFC97B1202FA648004A3FE3 /* Project object */;
+}
