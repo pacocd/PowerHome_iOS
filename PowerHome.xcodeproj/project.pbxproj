@@ -12,6 +12,7 @@
 		ACCC0D53203031410035F967 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D52203031410035F967 /* SignUpView.swift */; };
 		ACCC0D55203031A70035F967 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D54203031A70035F967 /* LoginTests.swift */; };
 		ACCC0D57203031BB0035F967 /* SignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D56203031BB0035F967 /* SignUpTests.swift */; };
+		ACCC0D59203035F10035F967 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D58203035F10035F967 /* BaseView.swift */; };
 		ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */; };
 		ACFC97C4202FA648004A3FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C3202FA648004A3FE3 /* Assets.xcassets */; };
 		ACFC97C7202FA648004A3FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */; };
@@ -44,6 +45,7 @@
 		ACCC0D52203031410035F967 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		ACCC0D54203031A70035F967 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		ACCC0D56203031BB0035F967 /* SignUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTests.swift; sourceTree = "<group>"; };
+		ACCC0D58203035F10035F967 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		ACFC97B9202FA648004A3FE3 /* PowerHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFC97C3202FA648004A3FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				ACFC97EE202FCF9F004A3FE3 /* LoginView.swift */,
 				ACCC0D52203031410035F967 /* SignUpView.swift */,
+				ACCC0D58203035F10035F967 /* BaseView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				ACFC97EB202FC889004A3FE3 /* LoginViewController.swift in Sources */,
 				ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */,
 				ACCC0D4F20301DF10035F967 /* UISquareButton.swift in Sources */,
+				ACCC0D59203035F10035F967 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

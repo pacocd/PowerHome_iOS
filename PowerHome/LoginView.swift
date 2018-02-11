@@ -9,7 +9,7 @@
 import UIKit
 
 /// Login view to be used in
-class LoginView: UIView {
+class LoginView: BaseView {
 
     lazy var usernameLabel: UILabel = {
         let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -158,17 +158,4 @@ extension LoginView {
         addConstraints(signUpButtonEqualWidthsToUsernameLabelConstraints)
         addConstraints([loginButtonHeightConstraint, signUpButtonHeighConstraint])
     }
-}
-
-extension LoginView: UITextFieldDelegate {
-
-    @objc func dismissKeyboard(_ sender: Any) {
-        endEditing(true)
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        dismissKeyboard(Any.self)
-        return true
-    }
-
 }
