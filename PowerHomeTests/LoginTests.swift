@@ -7,29 +7,37 @@
 //
 
 import XCTest
+@testable import PowerHome
 
 class LoginTests: XCTestCase {
-    
+
+    var loginViewController: LoginViewController?
     override func setUp() {
         super.setUp()
+
+        loginViewController = LoginViewController()
+
+        _ = loginViewController?.view
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        loginViewController = nil
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func loginViewControllerInitializesProperly() {
+        loginViewController?.loginView.dismissKeyboard(Any.self)
+        XCTAssertNotNil(loginViewController)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testConformsUITextFieldDelegateProtocolShouldBeTrue() {
+        XCTAssert((loginViewController?.loginView.conforms(to: UITextFieldDelegate.self))!)
     }
-    
+
+    func testTextFieldShouldReturnTrueValue() {
+        XCTAssert((loginViewController?.loginView.textFieldShouldReturn(UITextField()))!)
+    }
+
 }
