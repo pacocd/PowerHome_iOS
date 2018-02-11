@@ -8,14 +8,43 @@
 
 import UIKit
 
+/// Login view to be used in
 class LoginView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    lazy var userNameLabel: UILabel = {
+        let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        label.text = "Username"
+        label.textColor = .darkGray
+        label.font = UIFont.systemFont(ofSize: 14)
+        return label
+    }()
+
+    lazy var passwordLabel: UILabel = {
+        let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        label.text = "Password"
+        label.textColor = .darkGray
+        label.font = UIFont.systemFont(ofSize: 14)
+        return label
+    }()
+
+    lazy var userNameTextField: UITextField = {
+        let textField: UITextField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        textField.placeholder = "user@example.com"
+        textField.autocorrectionType = .no
+        textField.keyboardType = .emailAddress
+        textField.autocapitalizationType = .none
+        textField.borderStyle = .roundedRect
+        return textField
+    }()
+
+    lazy var passwordTextField: UITextField = {
+        let textField: UITextField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        textField.placeholder = "user@example.com"
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
+        textField.borderStyle = .roundedRect
+        textField.isSecureTextEntry = true
+        return textField
+    }()
 
 }
