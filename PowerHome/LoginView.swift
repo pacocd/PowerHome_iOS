@@ -50,4 +50,70 @@ class LoginView: UIView {
         return textField
     }()
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        translatesAutoresizingMaskIntoConstraints = false
+        addSubview(usernameLabel)
+        addSubview(usernameTextField)
+        addSubview(passwordLabel)
+        addSubview(passwordTextField)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+}
+
+// MARK: - AutoLayout
+extension LoginView {
+
+    override func updateConstraints() {
+        super.updateConstraints()
+
+        let usernameLabelHorizontalConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
+            withVisualFormat: "H:|-15-[usernameLabel]-15-|",
+            options: .alignAllBottom,
+            metrics: nil,
+            views: ["usernameLabel": usernameLabel])
+        let verticalElementsConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-30-[usernameLabel]-15-[usernameTextField]-30-[passwordLabel]-15-[passwordTextField]",
+            options: .alignAllLeading,
+            metrics: nil,
+            views: [
+                "usernameLabel": usernameLabel,
+                "usernameTextField": usernameTextField,
+                "passwordLabel": passwordLabel,
+                "passwordTextField": passwordTextField
+            ])
+        let usernameTextFieldEqualWidthsToUsernameLabelConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
+            withVisualFormat: "[usernameTextField(==usernameLabel)]",
+            options: .alignAllCenterX,
+            metrics: nil,
+            views: [
+            "usernameLabel": usernameLabel,
+            "usernameTextField": usernameTextField
+            ])
+        let passwordLabelEqualWidthsToUsernameLabelConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
+            withVisualFormat: "[passwordLabel(==usernameLabel)]",
+            options: .alignAllCenterX,
+            metrics: nil,
+            views: [
+                "usernameLabel": usernameLabel,
+                "passwordLabel": passwordLabel
+            ])
+        let passwordTextFieldTextFieldEqualWidthsToUsernameLabelConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
+            withVisualFormat: "[passwordTextField(==usernameLabel)]",
+            options: .alignAllCenterX,
+            metrics: nil,
+            views: [
+                "usernameLabel": usernameLabel,
+                "passwordTextField": passwordTextField
+            ])
+        addConstraints(usernameLabelHorizontalConstraints)
+        addConstraints(verticalElementsConstraints)
+        addConstraints(usernameTextFieldEqualWidthsToUsernameLabelConstraints)
+        addConstraints(passwordLabelEqualWidthsToUsernameLabelConstraints)
+        addConstraints(passwordTextFieldTextFieldEqualWidthsToUsernameLabelConstraints)
+    }
 }
