@@ -50,6 +50,18 @@ class LoginView: UIView {
         return textField
     }()
 
+    lazy var loginButton: UISquareButton = {
+        let button: UISquareButton = UISquareButton(buttonType: .system)
+        button.setTitle("Login", for: .normal)
+        return button
+    }()
+
+    lazy var signUpButton: UISquareButton = {
+        let button: UISquareButton = UISquareButton(buttonType: .system)
+        button.setTitle("Sign Up", for: .normal)
+        return button
+    }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
@@ -57,6 +69,8 @@ class LoginView: UIView {
         addSubview(usernameTextField)
         addSubview(passwordLabel)
         addSubview(passwordTextField)
+        addSubview(loginButton)
+        addSubview(signUpButton)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -77,14 +91,16 @@ extension LoginView {
             metrics: nil,
             views: ["usernameLabel": usernameLabel])
         let verticalElementsConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
-            withVisualFormat: "V:|-30-[usernameLabel]-15-[usernameTextField]-30-[passwordLabel]-15-[passwordTextField]",
+            withVisualFormat: "V:|-30-[usernameLabel]-15-[usernameTextField]-30-[passwordLabel]-15-[passwordTextField]-40-[loginButton]-15-[signUpButton]",
             options: .alignAllLeading,
             metrics: nil,
             views: [
                 "usernameLabel": usernameLabel,
                 "usernameTextField": usernameTextField,
                 "passwordLabel": passwordLabel,
-                "passwordTextField": passwordTextField
+                "passwordTextField": passwordTextField,
+                "loginButton": loginButton,
+                "signUpButton": signUpButton
             ])
         let usernameTextFieldEqualWidthsToUsernameLabelConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
             withVisualFormat: "[usernameTextField(==usernameLabel)]",
@@ -110,10 +126,32 @@ extension LoginView {
                 "usernameLabel": usernameLabel,
                 "passwordTextField": passwordTextField
             ])
+        let loginButtonEqualWidthsToUsernameLabelConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
+            withVisualFormat: "[loginButton(==usernameLabel)]",
+            options: .alignAllCenterX,
+            metrics: nil,
+            views: [
+                "usernameLabel": usernameLabel,
+                "loginButton": loginButton
+            ])
+        let signUpButtonEqualWidthsToUsernameLabelConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(
+            withVisualFormat: "[signUpButton(==usernameLabel)]",
+            options: .alignAllCenterX,
+            metrics: nil,
+            views: [
+                "usernameLabel": usernameLabel,
+                "signUpButton": signUpButton
+            ])
+        let loginButtonHeightConstraint: NSLayoutConstraint = NSLayoutConstraint(item: loginButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40)
+        let signUpButtonHeighConstraint: NSLayoutConstraint = NSLayoutConstraint(item: signUpButton, attribute: .height, relatedBy: .equal, toItem: loginButton, attribute: .height, multiplier: 1, constant: 0)
+
         addConstraints(usernameLabelHorizontalConstraints)
         addConstraints(verticalElementsConstraints)
         addConstraints(usernameTextFieldEqualWidthsToUsernameLabelConstraints)
         addConstraints(passwordLabelEqualWidthsToUsernameLabelConstraints)
         addConstraints(passwordTextFieldTextFieldEqualWidthsToUsernameLabelConstraints)
+        addConstraints(loginButtonEqualWidthsToUsernameLabelConstraints)
+        addConstraints(signUpButtonEqualWidthsToUsernameLabelConstraints)
+        addConstraints([loginButtonHeightConstraint, signUpButtonHeighConstraint])
     }
 }
