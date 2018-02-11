@@ -37,6 +37,7 @@ class LoginView: UIView {
         textField.autocapitalizationType = .none
         textField.borderStyle = .roundedRect
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.delegate = self
         return textField
     }()
 
@@ -47,6 +48,7 @@ class LoginView: UIView {
         textField.borderStyle = .roundedRect
         textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.delegate = self
         return textField
     }()
 
@@ -71,6 +73,8 @@ class LoginView: UIView {
         addSubview(passwordTextField)
         addSubview(loginButton)
         addSubview(signUpButton)
+        let dismissKeyboardTapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard(_:)))
+        addGestureRecognizer(dismissKeyboardTapGestureRecognizer)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -154,4 +158,17 @@ extension LoginView {
         addConstraints(signUpButtonEqualWidthsToUsernameLabelConstraints)
         addConstraints([loginButtonHeightConstraint, signUpButtonHeighConstraint])
     }
+}
+
+extension LoginView: UITextFieldDelegate {
+
+    @objc func dismissKeyboard(_ sender: Any) {
+        endEditing(true)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        dismissKeyboard(Any.self)
+        return true
+    }
+
 }
