@@ -14,4 +14,12 @@ extension UIColor {
         return UIColor(red: 41 / 255, green: 43 / 255, blue: 54 / 255, alpha: 1)
     }
 
+    class var primaryBlue: UIColor {
+        return UIColor(red: 63 / 255, green: 81 / 255, blue: 181 / 255, alpha: 1)
+    }
+
+    class var primaryDarkBlue: UIColor {
+        return UIColor(red: 48 / 255, green: 63 / 255, blue: 159 / 255, alpha: 1)
+    }
+
 }
