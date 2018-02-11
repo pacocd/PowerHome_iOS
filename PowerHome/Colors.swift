@@ -11,7 +11,7 @@ import UIKit
 extension UIColor {
 
     class var darkGray: UIColor {
-        return UIColor(red: 143 / 255, green: 250 / 255, blue: 93 / 255, alpha: 1)
+        return UIColor(red: 41 / 255, green: 43 / 255, blue: 54 / 255, alpha: 1)
     }
 
 }
