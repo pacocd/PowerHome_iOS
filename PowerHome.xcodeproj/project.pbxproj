@@ -12,6 +12,7 @@
 		ACFC97C7202FA648004A3FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */; };
 		ACFC97D2202FA648004A3FE3 /* PowerHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97D1202FA648004A3FE3 /* PowerHomeTests.swift */; };
 		ACFC97DD202FA649004A3FE3 /* PowerHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97DC202FA649004A3FE3 /* PowerHomeUITests.swift */; };
+		ACFC97EB202FC889004A3FE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		ACFC97D8202FA649004A3FE3 /* PowerHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFC97DC202FA649004A3FE3 /* PowerHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerHomeUITests.swift; sourceTree = "<group>"; };
 		ACFC97DE202FA649004A3FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				ACFC97C3202FA648004A3FE3 /* Assets.xcassets */,
 				ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */,
 				ACFC97C8202FA648004A3FE3 /* Info.plist */,
+				ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */,
 			);
 			path = PowerHome;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFC97EB202FC889004A3FE3 /* LoginViewController.swift in Sources */,
 				ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
