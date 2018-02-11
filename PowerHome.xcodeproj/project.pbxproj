@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		ACCC0D4F20301DF10035F967 /* UISquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D4E20301DF10035F967 /* UISquareButton.swift */; };
+		ACCC0D512030312B0035F967 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D502030312B0035F967 /* SignUpViewController.swift */; };
+		ACCC0D53203031410035F967 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D52203031410035F967 /* SignUpView.swift */; };
+		ACCC0D55203031A70035F967 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D54203031A70035F967 /* LoginTests.swift */; };
+		ACCC0D57203031BB0035F967 /* SignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D56203031BB0035F967 /* SignUpTests.swift */; };
 		ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */; };
 		ACFC97C4202FA648004A3FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C3202FA648004A3FE3 /* Assets.xcassets */; };
 		ACFC97C7202FA648004A3FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */; };
@@ -37,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		ACCC0D4E20301DF10035F967 /* UISquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISquareButton.swift; sourceTree = "<group>"; };
+		ACCC0D502030312B0035F967 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ACCC0D52203031410035F967 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		ACCC0D54203031A70035F967 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		ACCC0D56203031BB0035F967 /* SignUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTests.swift; sourceTree = "<group>"; };
 		ACFC97B9202FA648004A3FE3 /* PowerHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFC97C3202FA648004A3FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +132,8 @@
 		ACFC97D0202FA648004A3FE3 /* PowerHomeTests */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC0D56203031BB0035F967 /* SignUpTests.swift */,
+				ACCC0D54203031A70035F967 /* LoginTests.swift */,
 				ACFC97D1202FA648004A3FE3 /* PowerHomeTests.swift */,
 				ACFC97D3202FA648004A3FE3 /* Info.plist */,
 			);
@@ -143,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFC97EE202FCF9F004A3FE3 /* LoginView.swift */,
+				ACCC0D52203031410035F967 /* SignUpView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */,
+				ACCC0D502030312B0035F967 /* SignUpViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -296,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCC0D512030312B0035F967 /* SignUpViewController.swift in Sources */,
 				ACFC97EF202FCF9F004A3FE3 /* LoginView.swift in Sources */,
 				ACFC97F2202FD0CD004A3FE3 /* Colors.swift in Sources */,
+				ACCC0D53203031410035F967 /* SignUpView.swift in Sources */,
 				ACFC97EB202FC889004A3FE3 /* LoginViewController.swift in Sources */,
 				ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */,
 				ACCC0D4F20301DF10035F967 /* UISquareButton.swift in Sources */,
@@ -309,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFC97D2202FA648004A3FE3 /* PowerHomeTests.swift in Sources */,
+				ACCC0D57203031BB0035F967 /* SignUpTests.swift in Sources */,
+				ACCC0D55203031A70035F967 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
