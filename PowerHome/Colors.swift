@@ -6,4 +6,12 @@
 //  Copyright © 2018 Francisco Javier Chacon de Dios. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIColor {
+
+    class var darkGray: UIColor {
+        return UIColor(red: 143 / 255, green: 250 / 255, blue: 93 / 255, alpha: 1)
+    }
+
+}
