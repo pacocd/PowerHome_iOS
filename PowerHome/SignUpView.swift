@@ -10,7 +10,7 @@ import UIKit
 
 class SignUpView: BaseView {
 
-    lazy var userNameLabel: UILabel = {
+    lazy var nameLabel: UILabel = {
         let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         label.text = "Name"
         label.textColor = .darkGray
@@ -46,7 +46,7 @@ class SignUpView: BaseView {
         return label
     }()
 
-    lazy var userNameTextField: UITextField = {
+    lazy var nameTextField: UITextField = {
         let textField: UITextField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         textField.placeholder = "First Name and Last Name"
         textField.autocorrectionType = .no
@@ -94,16 +94,36 @@ class SignUpView: BaseView {
 
     lazy var signUpButton: UISquareButton = {
         let button: UISquareButton = UISquareButton(buttonType: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Sign Up", for: .normal)
         return button
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+
+        backgroundColor = .white
+        translatesAutoresizingMaskIntoConstraints = false
+        addSubview(nameLabel)
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+
+}
+
+// MARK: - AutoLayout
+extension SignUpView {
+
+    override func updateConstraints() {
+        super.updateConstraints()
+
+        let nameLabelHorizontalConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(withVisualFormat: "H:|-15-[nameLabel]-15-|", options: .alignAllBottom, metrics: nil, views: ["nameLabel": nameLabel])
+        let verticalSpacingConstraints: [NSLayoutConstraint] = NSLayoutConstraint.constraints(withVisualFormat: "V:|-15-[nameLabel]", options: .alignAllLeading, metrics: nil, views: ["nameLabel": nameLabel])
+
+        addConstraints(nameLabelHorizontalConstraints)
+        addConstraints(verticalSpacingConstraints)
     }
 
 }

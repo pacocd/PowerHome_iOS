@@ -158,4 +158,5 @@ extension LoginView {
         addConstraints(signUpButtonEqualWidthsToUsernameLabelConstraints)
         addConstraints([loginButtonHeightConstraint, signUpButtonHeighConstraint])
     }
+
 }
