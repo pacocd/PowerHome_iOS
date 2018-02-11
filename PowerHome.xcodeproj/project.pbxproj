@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACCC0D4F20301DF10035F967 /* UISquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCC0D4E20301DF10035F967 /* UISquareButton.swift */; };
 		ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */; };
 		ACFC97C4202FA648004A3FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C3202FA648004A3FE3 /* Assets.xcassets */; };
 		ACFC97C7202FA648004A3FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACCC0D4E20301DF10035F967 /* UISquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISquareButton.swift; sourceTree = "<group>"; };
 		ACFC97B9202FA648004A3FE3 /* PowerHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFC97C3202FA648004A3FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACCC0D4D20301DB90035F967 /* UICustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				ACCC0D4E20301DF10035F967 /* UISquareButton.swift */,
+			);
+			name = UICustomElements;
+			sourceTree = "<group>";
+		};
 		ACFC97B0202FA648004A3FE3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		ACFC97BB202FA648004A3FE3 /* PowerHome */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC0D4D20301DB90035F967 /* UICustomElements */,
 				ACFC97F0202FD0BD004A3FE3 /* Utils */,
 				ACFC97ED202FCF7A004A3FE3 /* Controllers */,
 				ACFC97EC202FCF6C004A3FE3 /* Views */,
@@ -289,6 +300,7 @@
 				ACFC97F2202FD0CD004A3FE3 /* Colors.swift in Sources */,
 				ACFC97EB202FC889004A3FE3 /* LoginViewController.swift in Sources */,
 				ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */,
+				ACCC0D4F20301DF10035F967 /* UISquareButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
