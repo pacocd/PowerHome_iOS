@@ -13,6 +13,8 @@
 		ACFC97D2202FA648004A3FE3 /* PowerHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97D1202FA648004A3FE3 /* PowerHomeTests.swift */; };
 		ACFC97DD202FA649004A3FE3 /* PowerHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97DC202FA649004A3FE3 /* PowerHomeUITests.swift */; };
 		ACFC97EB202FC889004A3FE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */; };
+		ACFC97EF202FCF9F004A3FE3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97EE202FCF9F004A3FE3 /* LoginView.swift */; };
+		ACFC97F2202FD0CD004A3FE3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC97F1202FD0CC004A3FE3 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		ACFC97DC202FA649004A3FE3 /* PowerHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerHomeUITests.swift; sourceTree = "<group>"; };
 		ACFC97DE202FA649004A3FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACFC97EE202FCF9F004A3FE3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ACFC97F1202FD0CC004A3FE3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,13 @@
 		ACFC97BB202FA648004A3FE3 /* PowerHome */ = {
 			isa = PBXGroup;
 			children = (
+				ACFC97F0202FD0BD004A3FE3 /* Utils */,
+				ACFC97ED202FCF7A004A3FE3 /* Controllers */,
+				ACFC97EC202FCF6C004A3FE3 /* Views */,
 				ACFC97BC202FA648004A3FE3 /* AppDelegate.swift */,
 				ACFC97C3202FA648004A3FE3 /* Assets.xcassets */,
 				ACFC97C5202FA648004A3FE3 /* LaunchScreen.storyboard */,
 				ACFC97C8202FA648004A3FE3 /* Info.plist */,
-				ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */,
 			);
 			path = PowerHome;
 			sourceTree = "<group>";
@@ -120,6 +126,30 @@
 				ACFC97DE202FA649004A3FE3 /* Info.plist */,
 			);
 			path = PowerHomeUITests;
+			sourceTree = "<group>";
+		};
+		ACFC97EC202FCF6C004A3FE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACFC97EE202FCF9F004A3FE3 /* LoginView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		ACFC97ED202FCF7A004A3FE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACFC97EA202FC889004A3FE3 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ACFC97F0202FD0BD004A3FE3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACFC97F1202FD0CC004A3FE3 /* Colors.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFC97EF202FCF9F004A3FE3 /* LoginView.swift in Sources */,
+				ACFC97F2202FD0CD004A3FE3 /* Colors.swift in Sources */,
 				ACFC97EB202FC889004A3FE3 /* LoginViewController.swift in Sources */,
 				ACFC97BD202FA648004A3FE3 /* AppDelegate.swift in Sources */,
 			);
