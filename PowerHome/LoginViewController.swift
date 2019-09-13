@@ -16,8 +16,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-
         view.addSubview(loginView)
+
+        loginView.signUpButton.addTarget(self, action: #selector(showSignUp), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
 
@@ -29,6 +30,11 @@ class LoginViewController: UIViewController {
 
         view.addConstraints(loginViewVerticalConstraints)
         view.addConstraints(loginViewHorizontalConstraints)
+    }
+
+    @objc func showSignUp() {
+        let navigationController: UINavigationController = UINavigationController(rootViewController: SignUpViewController())
+        present(navigationController, animated: true, completion: nil)
     }
 
 }
